@@ -114,6 +114,7 @@ const WeldingCourse = () => {
               <Grid item>
                 <button className={styles.enrollButton}>
                   <Link
+                    aria-label="WhatsApp Chat Link"
                     href={"https://api.whatsapp.com/send/?phone=918089560442"}
                   >
                     <WhatsAppIcon />

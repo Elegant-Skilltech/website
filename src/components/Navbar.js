@@ -37,6 +37,7 @@ const Navbar = () => {
             <button
               className="text-white md:hidden absolute top-6 right-5"
               onClick={() => setToggleMenu(false)}
+              aria-label="close menu"
             >
               <CloseOutlinedIcon />
             </button>
@@ -57,18 +58,21 @@ const Navbar = () => {
               <Link
                 href="https://www.facebook.com/profile.php?id=61559930794424"
                 target="_blank"
+                aria-label="facebook Page Link"
               >
                 <FacebookOutlinedIcon className="cursor-pointer hover:text-white text-xl" />
               </Link>
               <Link
                 target="_blank"
                 href={"https://www.linkedin.com/company/elegant-skill-tech/"}
+                aria-label="LinkedIn Page Link"
               >
                 <LinkedInIcon className="cursor-pointer hover:text-white text-xl" />
               </Link>
               <Link
                 target="_blank"
                 href={"https://www.instagram.com/elegant._.official//"}
+                aria-label="Instagram Page Link"
               >
                 <InstagramIcon className="cursor-pointer hover:text-white text-xl" />
               </Link>
@@ -77,6 +81,7 @@ const Navbar = () => {
                 href={
                   "https://www.youtube.com/channel/UCSp9raIcl321sMyrkiTCxMw"
                 }
+                aria-label="YouTube Channel Link"
               >
                 <YouTubeIcon className="cursor-pointer hover:text-white text-xl" />
               </Link>

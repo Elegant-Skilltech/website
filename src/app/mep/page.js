@@ -88,6 +88,7 @@ const Course = () => {
               <Grid item>
                 <button className={styles.enrollButton}>
                   <Link
+                    aria-label="WhatsApp Chat Link"
                     href={"https://api.whatsapp.com/send/?phone=918848943507"}
                   >
                     <WhatsAppIcon />

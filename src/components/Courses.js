@@ -26,7 +26,10 @@ const CourseCard = ({ course }) => {
       </div>
       <div className="mx-auto">
         <Link href={`/${link}`}>
-          <button className="w-fit capitalize text-base hover:bg-green py-3 px-6 border-2 border-transparent rounded-full">
+          <button
+            aria-label="Know More button"
+            className="w-fit capitalize text-base hover:bg-green py-3 px-6 border-2 border-transparent rounded-full"
+          >
             Know More
           </button>
         </Link>

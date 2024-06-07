@@ -26,6 +26,7 @@ const Footer = () => {
                   href="https://www.facebook.com/profile.php?id=61559930794424"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="facebook Page Link"
                 >
                   <FacebookIcon className={styles.socialIcon} />
                 </a>
@@ -33,6 +34,7 @@ const Footer = () => {
                   href="https://www.youtube.com/channel/UCSp9raIcl321sMyrkiTCxMw"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="YouTube Channel Link"
                 >
                   <YouTubeIcon className={styles.socialIcon} />
                 </a>
@@ -40,12 +42,14 @@ const Footer = () => {
                   href="https://www.linkedin.com/company/elegant-skill-tech/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn Page Link"
                 >
                   <LinkedInIcon className={styles.socialIcon} />
                 </a>
                 <a
                   target="_blank"
                   href={"https://www.instagram.com/elegant._.official//"}
+                  aria-label="Instagram Page Link"
                 >
                   <InstagramIcon className="cursor-pointer hover:text-white text-xl" />
                 </a>
