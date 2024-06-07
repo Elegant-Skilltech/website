@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+    /* background: linear-gradient(to bottom, #5de0e6,#5d9cee); */
+    color: #000; /* Ensure text remains readable */
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.service-name {
+  color: whitesmoke; 
+  text-transform: uppercase; 
+  display: block; 
+  font-weight: 600; 
+  font-size: 0.875rem; 
+  letter-spacing: 0.1em; 
+}
+
+.title {
+  text-transform: capitalize; 
+  font-size: 1.5rem; 
+  font-weight: 600; 
+  margin-top: 0.75rem; 
+  margin-bottom: 0.75rem; 
+  color: #003285;
+}
+
+/* Media query for small screens and above (min-width: 640px) */
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.875rem; 
+  }
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
+.team-card:hover :is(h2, p) {
+  color: #3b82f6;
+}
+
+.team-card:hover .icons {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+input::placeholder {
+  color: #3b82f6;
+}
+
+@keyframes playPluse {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(-50%);
+    opacity: 1;
+    width: 4rem;
+    height: 4rem;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(-50%);
+    opacity: 0;
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.playButton {
+  animation: playPluse 1.5s ease-out infinite;
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 0;
+}
+
+.redShade{
+  color: #E70C4D;
+}
+
+.blueShade{
+  color:#3A72C8
+}
+
+.yellowShade{
+  color:#FDCE04
+}
+
+.greenShade{
+  color:rgb(163 230 53);
+}

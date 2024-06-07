@@ -1,0 +1,85 @@
+.body{
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 64rem; 
+  margin: 0 auto;
+}
+
+.heading {
+  text-transform: capitalize;
+  font-size: 1.5rem; 
+  font-size: 1.875rem; 
+  font-weight: 600; 
+  margin: 0.75rem 0;
+  text-align: center;
+  color: #238783;
+}
+
+.description {
+  font-size: 1.125rem; 
+  margin: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .description {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 1.0625rem; 
+  }
+}
+
+.instructor,
+.curriculum {
+  margin-bottom: 2rem; 
+}
+
+.subheading {
+  font-size: 1.25rem; 
+  font-weight: 600; 
+  margin-top: 0.5rem; 
+  color:#178a1dd7;
+}
+
+.enrollButton {
+  background-color: #19db39; 
+  color: white;
+  padding: 0.5rem 1rem;  
+  border-radius: 0.25rem; 
+  transition: background-color 0.2s; 
+}
+
+.enrollButton:hover {
+  background-color: #238783; 
+}
+
+.faq {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faqItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #178a1dd7;
+  font-weight: bold;
+}
+
+.faqItem p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.sectionHeading{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color:#238783;
+}

@@ -1,0 +1,39 @@
+.customclass {
+  width: 100%; /* w-full */
+  background-color: #1fccc5; 
+  color: #FFFFFF; /* text-white */
+  background-size: cover; /* bg-cover */
+  background-repeat: no-repeat; /* bg-no-repeat */
+  background-position: center; /* bg-center */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .sectionHeading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color:#238783;
+  }
