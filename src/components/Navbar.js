@@ -25,14 +25,21 @@ const Navbar = () => {
     <div ref={navbar} className={styles.navbar}>
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
-          <Image src="/logo.png" width={200} height={200} alt="company logo" />
+          <Image
+            src="/logo.png"
+            width={200}
+            height={200}
+            alt="company logo"
+            quality={"65%"}
+          />
         </Link>
 
         <div>
           <ul
+            // need gradient css property for toggle menu
             className={`${
               toggleMenu === true ? "left-0" : "-left-full"
-            } bg-green text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
+            } text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
           >
             <button
               className="text-white md:hidden absolute top-6 right-5"
@@ -41,19 +48,17 @@ const Navbar = () => {
             >
               <CloseOutlinedIcon />
             </button>
-            {["home", "about Us", "features", "courses", "testimonial"].map(
-              (link) => (
-                <li
-                  key={link}
-                  className={`${
-                    selectedItem === link ? "text-white" : ""
-                  } capitalize border-b py-4 md:border-none md:py-0 hover:text-white`}
-                  onClick={() => setSelectedItem(link)}
-                >
-                  <Link href={`#${link}`}>{link}</Link>
-                </li>
-              )
-            )}
+            {["home", "about Us", "features", "courses"].map((link) => (
+              <li
+                key={link}
+                className={`${
+                  selectedItem === link ? "text-white" : ""
+                } capitalize border-b py-4 md:border-none md:py-0 hover:text-white`}
+                onClick={() => setSelectedItem(link)}
+              >
+                <Link href={`#${link}`}>{link}</Link>
+              </li>
+            ))}
             <div className="md:hidden mx-auto absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-3">
               <Link
                 href="https://www.facebook.com/profile.php?id=61559930794424"

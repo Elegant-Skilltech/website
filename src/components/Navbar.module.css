@@ -1,6 +1,6 @@
 /* styles.css */
 .navbar {
-    background-color: #1fccc5;
+    background-image: linear-gradient(to right, rgb(38, 206, 206),rgb(151, 152, 216));
     width: 100%; /* w-full */
     z-index: 50; /* z-50 */
     position: fixed; /* fixed */

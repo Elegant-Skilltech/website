@@ -1,5 +1,6 @@
 .footer {
-    background: #238783; 
+    /* background: #238783;  */
+    background-image: linear-gradient(to right, rgb(38, 206, 206),rgb(151, 152, 216));
     color: #fff;
     padding: 20px 0;
     margin-top: 20px;
