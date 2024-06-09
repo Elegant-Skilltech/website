@@ -1,13 +1,12 @@
 /* styles.css */
 .navbar {
-    background-image: linear-gradient(to right, rgb(38, 206, 206),rgb(151, 152, 216));
-    width: 100%; /* w-full */
-    z-index: 50; /* z-50 */
-    position: fixed; /* fixed */
-    top: 0; /* top-0 */
-    left: 0; /* left-0 */
-    padding-top: 1rem; /* py-4 translates to 1rem (16px) * 4 */
-    padding-bottom: 1rem; /* py-4 translates to 1rem (16px) * 4 */
-    margin-bottom: 2.5rem; /* mb-10 translates to 2.5rem (40px) * 10 */
-  }
-  
+  background-image: linear-gradient(to right, rgb(38, 206, 206),rgb(151, 152, 216));
+  width: 100%; /* w-full */
+  z-index: 50; /* z-50 */
+  position: fixed; /* fixed */
+  top: 0; /* top-0 */
+  left: 0; /* left-0 */
+  padding-top: 1rem; /* py-4 translates to 1rem (16px) * 4 */
+  padding-bottom: 1rem; /* py-4 translates to 1rem (16px) * 4 */
+  margin-bottom: 2.5rem; /* mb-10 translates to 2.5rem (40px) * 10 */
+}

@@ -124,7 +124,7 @@ const WeldingCourse = () => {
             </Grid>
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

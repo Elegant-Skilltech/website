@@ -7,6 +7,8 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -17,29 +19,10 @@ const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState("/");
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const navbarRef = useRef(null);
-
-  useEffect(() => {
-    setMounted(true);
-    const handleClickOutside = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setToggleMenu(false);
-      }
-    };
-
-    if (toggleMenu) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [toggleMenu]);
+  const navbar = useRef();
 
   return (
-    <div ref={navbarRef} className={styles.navbar}>
+    <div ref={navbar} className={styles.navbar}>
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
         <Link href={"/"}>
           <Image
@@ -53,9 +36,10 @@ const Navbar = () => {
 
         <div>
           <ul
+            // need gradient css property for toggle menu
             className={`${
-              toggleMenu ? "left-0" : "-left-full"
-            } bg-custom-gradient text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
+              toggleMenu === true ? "left-0" : "-left-full"
+            } text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
           >
             <button
               className="text-white md:hidden absolute top-6 right-5"

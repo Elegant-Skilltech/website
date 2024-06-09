@@ -176,7 +176,7 @@ const Course = () => {
           </div>
         </div>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
