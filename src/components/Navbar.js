@@ -36,10 +36,9 @@ const Navbar = () => {
 
         <div>
           <ul
-            // need gradient css property for toggle menu
             className={`${
               toggleMenu === true ? "left-0" : "-left-full"
-            } text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
+            } bg-custom-gradient text-white z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
           >
             <button
               className="text-white md:hidden absolute top-6 right-5"
