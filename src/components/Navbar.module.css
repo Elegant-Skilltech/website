@@ -1,5 +1,5 @@
 .navbar {
-  background-image: linear-gradient(to right, #12c2e9,#f64f59);
+  background-image: linear-gradient(to right, #12c2e9,#1b0b55);
   width: 100%; 
   z-index: 50; 
   position: fixed; 
@@ -13,7 +13,7 @@
 
 @media (max-width: 767px) {
   .toggle-menu{
-    background-image: linear-gradient(to right, #12c2e9,#f64f59);
+    background-image: linear-gradient(to right, #12c2e9,#1b0b55);
     background-size: cover;
   }
 }

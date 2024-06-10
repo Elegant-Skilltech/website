@@ -2,7 +2,7 @@
 .customclass {
     width: 100%; /* w-full */
     /* background-color: #1fccc5;  */
-    background-image: linear-gradient(to right, #12c2e9,#f64f59);
+    background-image: linear-gradient(to right, #12c2e9,#1b0b55);
     color: #FFFFFF; /* text-white */
     background-size: cover; /* bg-cover */
     background-repeat: no-repeat; /* bg-no-repeat */
