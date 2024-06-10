@@ -83,7 +83,7 @@ const Course = () => {
             </Grid>
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
